@@ -29,7 +29,7 @@ at_exit do
   time_now = Time.now.strftime('%d/%m/%Y %H:%M:%S')
   ReportBuilder.configure do |config|
     config.json_path = 'report.json'
-    config.report_path = 'features/reports/cucumber_web_report.html'
+    config.report_path = 'features/reports/cucumber_web_report'
     config.report_types = [:html]
     config.report_tabs = %w[Overview Features Scenarios Errors]
     config.report_title = 'Cucumber Report - Livelo'
