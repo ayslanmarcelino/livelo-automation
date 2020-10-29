@@ -23,3 +23,9 @@ Then('the search must return the desired item') do
 
   expect(search_card_text).to have_content(@item_data[:name])
 end
+
+Then('the following item not found message should be returned {string}') do |string|
+  item_not_found_message = string
+
+  expect(page).to have_content(item_not_found_message + ' ' + @item_data[:name])
+end
