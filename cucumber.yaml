@@ -3,4 +3,4 @@
   html: --format html --out=features.html
   dot: --format progress
   bdd: --format pretty
-  json: --format json -o "report.json"
+  json: --format=message

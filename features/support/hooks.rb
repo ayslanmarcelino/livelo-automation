@@ -1,19 +1,9 @@
 # frozen_string_literal: true
 
 After do |scenario|
-  add_screenshot(scenario)
-
   if scenario.failed?
     add_browser_logs
   end
-end
-
-def add_screenshot(scenario)
-  name_scenario = scenario.name.gsub(/[^A-Za-z0-9]/, '')
-  name_scenario = name_scenario.gsub(' ','_').downcase!
-  screenshot = "log/screenshots/#{name_scenario}.png"
-  page.save_screenshot(screenshot)
-  embed(screenshot, 'image/png', 'Print')
 end
 
 def add_browser_logs

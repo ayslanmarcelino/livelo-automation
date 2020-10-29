@@ -31,4 +31,8 @@ class MainPage < SitePrism::Page
   def click_search
     button_search.click
   end
+
+  def show_cart
+    cart
+  end
 end

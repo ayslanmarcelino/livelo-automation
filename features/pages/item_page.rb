@@ -12,4 +12,8 @@ class ItemPage < SitePrism::Page
     button_add_to_cart.present?
     description.present?
   end
+
+  def click_add_to_cart
+    button_add_to_cart.click
+  end
 end

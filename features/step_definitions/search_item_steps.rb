@@ -12,7 +12,7 @@ When('click in search button') do
   @main_page.click_search
 end
 
-When('the correct path is returned') do
+When('the correct path search is returned') do
   search_url = '/searchresults'
 
   expect(page).to have_current_path(search_url, ignore_query: true)

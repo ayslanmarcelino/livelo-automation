@@ -9,3 +9,10 @@ end
 Then('the item details must be shown') do
   @item_page.details?
 end
+
+Given('access the item details') do
+  @item_page = ItemPage.new
+
+  @search_page.click_card_name
+  @item_page.details?
+end
