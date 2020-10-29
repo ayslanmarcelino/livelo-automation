@@ -15,7 +15,7 @@ Feature: Search item in Livelo
 
   Scenario: Search available item in Livelo
     When the desired item is entered
-      | name | Jogo FIFA 21 - PS4 |
+      | name | Console Playstation 4 Slim Sony 1 TB HDR Preto Bivolt CUH2115B |
     And click in search button
     And the correct path search is returned
     Then the search must return the desired item
