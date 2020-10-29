@@ -29,3 +29,17 @@ Then('the following item not found message should be returned {string}') do |str
 
   expect(page).to have_content(item_not_found_message + ' ' + @item_data[:name])
 end
+
+Given('get the desired item') do |table|
+  @item_data = table.rows_hash
+  @search_page = SearchPage.new
+  search_url = '/searchresults'
+
+  @main_page.input_item(@item_data)
+  @main_page.click_search
+
+  search_card_text = @search_page.show_card_name.text
+
+  expect(page).to have_current_path(search_url, ignore_query: true)
+  expect(search_card_text).to have_content(@item_data[:name])
+end
