@@ -4,6 +4,8 @@ class MainPage < SitePrism::Page
   set_url '/'
   element :logo_image, '#div-img'
   element :search, '#search-container'
+  element :input_search, '#input-search'
+  element :button_search, '#span-searchIcon'
   element :login, '#div-controlLogin'
   element :cart, '#div-actionCart'
   element :menu, '#div-menus__container'
@@ -20,5 +22,13 @@ class MainPage < SitePrism::Page
     banner.present?
     chat.present?
     footer.present?
+  end
+
+  def input_item(item)
+    input_search.set(item[:name])
+  end
+
+  def click_search
+    button_search.click
   end
 end
