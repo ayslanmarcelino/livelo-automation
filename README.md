@@ -55,7 +55,7 @@ Utilizar  _tag_  é uma ótima maneira de organizar  _features_  e cenários, se
 
 A estrutura criada funciona da seguinte forma:
 
--   **.circleci**: Armazena as configurações do CircleCI, onde a cada commit o mesmo irá realizar o teste de regressão, evitando que você rode localmente. O link de acesso para esse projeto é: https://app.circleci.com/pipelines/github/ayslanmarcelino.
+-   **.circleci**: Armazena as configurações do CircleCI, onde a cada commit o mesmo irá realizar o teste de regressão, evitando que você rode localmente. O link de acesso para esse projeto é: https://app.circleci.com/pipelines/github/ayslanmarcelino/livelo-automation.
 -   **features**: Armazena os dados dos testes.
 -   **features/pages**: Armazena os arquivos  `.rb`  com a implementação das pages utilizando o padrão "Page Objects", pela Gem SitePrism, uma DSL (Domain Specific Language) criada para facilitar a criação de page objects para testes automatizados em Ruby, utilizando o Capybara.
 -   **features/reports**: Armazena os relatórios das execuções dos testes.
