@@ -20,7 +20,7 @@ def add_browser_logs
   logs = page.driver.browser.manage.logs.get(:browser)
              .map { |line| [line.level, line.message] }
   logs.reject! { |line| %w[WARNING INFO].include?(line.first) }
-  embed(time_now.strftime('%d/%m/%Y %H:%M:%S' + "\n") + ('Current URL: ' + current_url + '\n') + logs.join('\n'), 'text/plain', 'BROWSER ERROR')
+  embed(time_now.strftime("%d/%m/%Y %H:%M:%S\n") + "Current URL: #{current_url}\\n" + logs.join('\n'), 'text/plain', 'BROWSER ERROR')
 end
 
 at_exit do
