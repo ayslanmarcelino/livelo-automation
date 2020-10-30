@@ -3,9 +3,7 @@
 After do |scenario|
   add_screenshot(scenario)
 
-  if scenario.failed?
-    add_browser_logs
-  end
+  add_browser_logs if scenario.failed?
 end
 
 def add_screenshot(scenario)
