@@ -61,6 +61,7 @@ A estrutura criada funciona da seguinte forma:
 -   **features/specifications**: Armazena as especificações dos testes (arquivos Gherkin).
 -   **features/step_definitions**: Armazena os arquivos com a implementação dos passos da automação.
 -   **features/support**: Armazena os arquivos  `env.rb`  e  `hooks.rb`  que servem como apoio para as configurações dos testes.
+-   **log/screenshots**: Armazena screenshots(prints) da última etapa de cada cenário.
 
 ## Passos para criação dos testes
 
