@@ -2,7 +2,7 @@
 
 @view_item_details
 
-Feature: Add item in cart
+Feature: View item details
 
   AS a user
   I WANT search desired item
